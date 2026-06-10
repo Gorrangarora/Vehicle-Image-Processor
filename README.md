@@ -250,4 +250,4 @@ cairosvg>=2.7.0
 **Project:** Vehicle Image Processing Pipeline
 **Organization:** Shriram Automall India Limited (SAMIL)
 **Developer:** Gorrang Arora
->>>>>>> 0f0adb8e17004a1e0d0d330166a5cff89bf9df02
+
