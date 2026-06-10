@@ -1,41 +1,5 @@
 # Vehicle Image Processor
 
-<<<<<<< HEAD
-Converts JPG, PNG, and PDF files into standardized JPEG images.
-Part of the AI-powered vehicle image pipeline project.
-
----
-
-## Setup
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Usage
-
-### Option A — Command line (Phase 2)
-
-1. Drop files into the `input/` folder
-2. Run the script:
-
-```bash
-python processor.py
-```
-
-3. Find results in `output/`
-4. Check logs in `logs/`
-
-### Option B — Streamlit dashboard (Phase 5)
-
-```bash
-streamlit run app.py
-```
-
-Opens at `http://localhost:8501` — upload files via browser, download a ZIP of results.
-=======
 A Python-based image processing pipeline that converts vehicle images from any format into standardized JPEG output. Built as part of an AI-powered vehicle data project at Shriram Automall India Limited (SAMIL).
 
 ---
@@ -70,7 +34,6 @@ Takes image files in any format from an `input/` folder, converts them all to hi
 - Quality: **95 / 95** (maximum)
 - Dimensions: **Same as input** (no resizing)
 - Naming: `filename.jpg` for single images, `filename_page01.jpg` for PDF pages, `filename_frame01.jpg` for GIF frames
->>>>>>> 0f0adb8e17004a1e0d0d330166a5cff89bf9df02
 
 ---
 
@@ -78,14 +41,6 @@ Takes image files in any format from an `input/` folder, converts them all to hi
 
 ```
 vehicle_image_processor/
-<<<<<<< HEAD
-├── processor.py      ← Core pipeline (Phase 2)
-├── app.py            ← Streamlit dashboard (Phase 5)
-├── requirements.txt
-├── input/            ← Drop files here
-├── output/           ← Processed JPEGs appear here
-└── logs/             ← CSV run logs
-=======
 ├── processor.py          Core pipeline — runs from terminal
 ├── app.py                Streamlit dashboard — runs in browser
 ├── requirements.txt      Python library dependencies
@@ -93,20 +48,10 @@ vehicle_image_processor/
 ├── input/                Drop your files here before running
 ├── output/               Converted JPEGs appear here
 └── logs/                 CSV report saved after every run
->>>>>>> 0f0adb8e17004a1e0d0d330166a5cff89bf9df02
 ```
 
 ---
 
-<<<<<<< HEAD
-## What it handles
-
-| Input | Output |
-|-------|--------|
-| `.jpg` / `.jpeg` | Standardized JPEG (resized, mode-fixed) |
-| `.png` (including transparent) | JPEG with white background |
-| `.pdf` | One JPEG per page at 2× resolution |
-=======
 ## Setup
 
 ### Step 1 — Install Python libraries
@@ -182,7 +127,6 @@ If Cairo is not installed, SVG files are skipped and all other formats still wor
 There is no resizing. A 4000×3000 input always produces a 4000×3000 output.
 
 JPEG re-encoding adds a very small second-generation quality loss (invisible at quality 95) when the input is already a JPEG. For RAW, PNG, BMP, TIFF inputs there is effectively zero visual quality loss.
->>>>>>> 0f0adb8e17004a1e0d0d330166a5cff89bf9df02
 
 ---
 
@@ -190,22 +134,6 @@ JPEG re-encoding adds a very small second-generation quality loss (invisible at 
 
 | Phase | Status | Description |
 |-------|--------|-------------|
-<<<<<<< HEAD
-| 1 | ✅ | Understand the data |
-| 2 | ✅ | Core pipeline (`processor.py`) |
-| 3 | 🔲 | Google Drive link support |
-| 4 | 🔲 | Organize by vehicle ID |
-| 5 | ✅ | Streamlit dashboard (`app.py`) |
-| — | 🔲 | PostgreSQL metadata storage |
-| — | 🔲 | AI classification |
-
----
-
-## Next step (Phase 3)
-
-Add Google Drive support by installing `google-api-python-client` and creating a service account.
-Ask Claude: *"How do I add Google Drive download support to this processor.py?"*
-=======
 | 1 | Done | Understand the data and current process |
 | 2 | Done | Core conversion pipeline (processor.py) |
 | 3 | Planned | Google Drive link support |
@@ -250,4 +178,3 @@ cairosvg>=2.7.0
 **Project:** Vehicle Image Processing Pipeline
 **Organization:** Shriram Automall India Limited (SAMIL)
 **Developer:** Gorrang Arora
-
