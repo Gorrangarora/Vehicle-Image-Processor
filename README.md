@@ -178,6 +178,3 @@ cairosvg>=2.7.0
 **Project:** Vehicle Image Processing Pipeline
 **Organization:** Shriram Automall India Limited (SAMIL)
 **Developer:** Gorrang Arora
-**University:** Manipal University Jaipur
-**Registration:** 2427030644
-**Guide:** Dr. Ajay Kumar
